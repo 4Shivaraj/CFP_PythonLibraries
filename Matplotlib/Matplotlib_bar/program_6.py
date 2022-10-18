@@ -1,20 +1,21 @@
-"""
+'''
     @Author: Shivaraj
     @Date: 16-10-2022
     @Last Modified by: Shivaraj
     @Last Modified date: 16-10-2022
     @Title: Write a Python programming to display a bar chart of the popularity of programming
-            Languages. Use different color for each bar.
+            Languages. Make blue border to each bar.
             Sample data:
             Programming languages: Java, Python, PHP, JavaScript, C#, C++
             Popularity: 22.2, 17.6, 8.8, 8, 7.7, 6.7
-"""
+'''
 import matplotlib.pyplot as plt
 import sys
 
 from data_log import get_logger
 
-lg = get_logger(name="(program_4)", file_name="data_log.log")
+lg = get_logger(name="(program_6)", file_name="data_log.log")
+
 
 class BarChart:
     """
@@ -35,7 +36,8 @@ class BarChart:
             popularity = [22.2, 17.6, 8.8, 8, 7.7, 6.7]
 
             # plotting x and y-axis values to create bar chart
-            plt.bar(prg_lang, popularity, color=('Blue', 'Green', 'Red', 'Yellow', 'cyan', 'Violet'))
+            plt.bar(prg_lang, popularity, color=(
+                0.2, 0.4, 0.6, 0.6), edgecolor='blue')
 
             # Set the x-axis label
             plt.xlabel("Languages")

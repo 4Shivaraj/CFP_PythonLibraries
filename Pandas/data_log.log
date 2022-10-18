@@ -1,0 +1,262 @@
+2022-10-14 17:32:39,592 (program_1) INFO  one-dimensional array: 
+0     2
+1     4
+2     6
+3     8
+4    10
+dtype: int64
+2022-10-14 17:35:12,457 (program_2) INFO  pandas series: 
+0     2
+1     4
+2     6
+3     8
+4    10
+dtype: int64 and 
+type: <class 'pandas.core.series.Series'>
+2022-10-14 17:35:12,461 (program_2) INFO Convert pandas series to python list: 
+2022-10-14 17:35:12,462 (program_2) INFO  
+python list: [2, 4, 6, 8, 10] and 
+type: <class 'list'>
+2022-10-14 17:35:31,003 (program_3) INFO  adding two series: 
+0     3
+1     7
+2    11
+3    15
+4    19
+dtype: int64
+2022-10-14 17:35:31,009 (program_3) INFO  substract two series: 
+0    1
+1    1
+2    1
+3    1
+4    1
+dtype: int64
+2022-10-14 17:35:31,014 (program_3) INFO  multiply two series: 
+0     2
+1    12
+2    30
+3    56
+4    90
+dtype: int64
+2022-10-14 17:35:31,021 (program_3) INFO  divide two series: 
+0    2.000000
+1    1.333333
+2    1.200000
+3    1.142857
+4    1.111111
+dtype: float64
+2022-10-14 17:35:40,108 (program_4) INFO original array: [0, 1, 2, 3, 4, 5, 6]
+2022-10-14 17:35:40,110 (program_4) INFO  First array elements raised to powers from second array, element-wise: [  0   1   8  27  64 125 216]
+2022-10-14 17:35:58,785 (program_5) INFO  DataFrame: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:36:06,947 (program_6) INFO  Summary of the basic information about this DataFrame and its data are:
+2022-10-14 17:36:16,887 (program_7) INFO  first top 3 rows of a given dataFrame are: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+2022-10-14 17:36:25,777 (program_8) INFO  'name' and 'score' columns are: 
+        name  score
+a  Anastasia   12.5
+b       Dima    9.0
+c  Katherine   16.5
+d      James    NaN
+e      Emily    9.0
+f    Michael   20.0
+g    Matthew   14.5
+h      Laura    NaN
+i      Kevin    8.0
+j      Jonas   19.0
+2022-10-14 17:36:32,222 (program_9) INFO  Select specific columns and rows: 
+      name  score
+b     Dima    9.0
+d    James    NaN
+f  Michael   20.0
+g  Matthew   14.5
+2022-10-14 17:36:38,263 (program_10) INFO  Number of attempts in the examination is greater than 2: 
+      name  score  attempts qualify
+b     Dima    9.0         3      no
+d    James    NaN         3      no
+f  Michael   20.0         3     yes
+2022-10-14 17:36:44,962 (program_11) INFO  Total rows: 10, and colums: 4
+2022-10-14 17:36:52,844 (program_12) INFO  rows having null values are: 
+    name  score  attempts qualify
+d  James    NaN         3      no
+h  Laura    NaN         1      no
+2022-10-14 17:36:57,979 (program_13) INFO  Number of attempts in the examination is less than 2 and score greater than 15: 
+    name  score  attempts qualify
+j  Jonas   19.0         1     yes
+2022-10-14 17:37:39,367 (program_14) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:37:39,375 (program_14) INFO  After updating the score: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James   11.5         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:37:45,690 (program_15) INFO  Sum of the examination attempts by the students: 19
+2022-10-14 17:37:52,334 (program_16) INFO  Mean score for each student in data frame: 13.5625
+2022-10-14 17:37:58,218 (program_17) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:37:58,268 (program_17) INFO after appending new record to dataframe: 
+        name   score attempts qualify
+a  Anastasia    12.5        1     yes
+b       Dima     9.0        3      no
+c  Katherine    16.5        2     yes
+d      James     NaN        3      no
+e      Emily     9.0        2      no
+f    Michael    20.0        3     yes
+g    Matthew    14.5        1     yes
+h      Laura     NaN        1      no
+i      Kevin     8.0        2      no
+j      Jonas    19.0        1     yes
+k          1  Suresh      yes    15.5
+2022-10-14 17:37:58,311 (program_17) INFO  after deleting the newly added record from dataframe: 
+        name score attempts qualify
+a  Anastasia  12.5        1     yes
+b       Dima   9.0        3      no
+c  Katherine  16.5        2     yes
+d      James   NaN        3      no
+e      Emily   9.0        2      no
+f    Michael  20.0        3     yes
+g    Matthew  14.5        1     yes
+h      Laura   NaN        1      no
+i      Kevin   8.0        2      no
+j      Jonas  19.0        1     yes
+2022-10-14 17:38:05,394 (program_18) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:38:05,437 (program_18) INFO Sort the data frame first by �name� in descending order, then by �score� in ascending order: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:38:11,169 (program_19) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:38:11,206 (program_19) INFO After updating: 
+        name  score  attempts  qualify
+a  Anastasia   12.5         1     True
+b       Dima    9.0         3    False
+c  Katherine   16.5         2     True
+d      James    NaN         3    False
+e      Emily    9.0         2    False
+f    Michael   20.0         3     True
+g    Matthew   14.5         1     True
+h      Laura    NaN         1    False
+i      Kevin    8.0         2    False
+j      Jonas   19.0         1     True
+2022-10-14 17:38:16,940 (program_20) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:38:16,971 (program_20) INFO After deleting column from data frame : 
+        name  score qualify
+a  Anastasia   12.5     yes
+b       Dima    9.0      no
+c  Katherine   16.5     yes
+d      James    NaN      no
+e      Emily    9.0      no
+f    Michael   20.0     yes
+g    Matthew   14.5     yes
+h      Laura    NaN      no
+i      Kevin    8.0      no
+j      Jonas   19.0     yes
+2022-10-14 17:38:23,021 (program_21) INFO Original dataframe: 
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+2022-10-14 17:38:23,062 (program_21) INFO After inserting "phone num" column: 
+        name  score  attempts qualify  phone_num
+a  Anastasia   12.5         1     yes       9876
+b       Dima    9.0         3      no       5679
+c  Katherine   16.5         2     yes       8645
+d      James    NaN         3      no       6793
+e      Emily    9.0         2      no       5699
+f    Michael   20.0         3     yes       7653
+g    Matthew   14.5         1     yes       4566
+h      Laura    NaN         1      no       3458
+i      Kevin    8.0         2      no       7883
+j      Jonas   19.0         1     yes       4565
+2022-10-14 17:38:29,701 (program_22) INFO  name and score: ('Anastasia', 12.5)
+2022-10-14 17:38:29,704 (program_22) INFO  name and score: ('Dima', 9.0)
+2022-10-14 17:38:29,707 (program_22) INFO  name and score: ('Katherine', 16.5)
+2022-10-14 17:38:35,864 (program_23) INFO to get list from DataFrame column headers: 
+['name', 'score', 'attempts', 'qualify']
